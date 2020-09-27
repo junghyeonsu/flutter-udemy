@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.pink[300],
         body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -37,58 +38,58 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
-            Container(
-              color: Colors.white,
+            SizedBox(
+              height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Colors.white,
+              ),
+            ),
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10.0,
                 horizontal: 25.0,
               ),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     size: 25.0,
                     color: Colors.pink[300],
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     '+82 123-1234-1234',
                     style: TextStyle(
                       fontFamily: 'NanumGothic',
                       color: Colors.pink[300],
                     ),
-                  )
-                ],
+                  ),
+                ),
               ),
             ),
-            Container(
-              color: Colors.white,
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10.0,
                 horizontal: 25.0,
               ),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     size: 25.0,
                     color: Colors.pink[300],
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     'jung660317@naver.com',
                     style: TextStyle(
                       fontFamily: 'NanumGothic',
                       color: Colors.pink[300],
                     ),
                   )
-                ],
+                  ,
+                )
               ),
             ),
           ],
