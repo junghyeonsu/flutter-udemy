@@ -1,8 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-
 export "FLUTTER_ROOT=C:\Users\hyeonsu\Desktop\flutter_windows_1.20.4-stable\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\hyeonsu\AndroidStudioProjects\flutter-udemy\quizzler-flutter-master"
+export "FLUTTER_APPLICATION_PATH=C:\Users\hyeonsu\AndroidStudioProjects\flutter-udemy\bmi-calculator-flutter-master"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build\ios"
