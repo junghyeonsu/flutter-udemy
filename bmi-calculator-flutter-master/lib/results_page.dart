@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
 import 'constants.dart';
 
 class ResultPage extends StatelessWidget {
@@ -12,12 +13,26 @@ class ResultPage extends StatelessWidget {
         onTap: () {
           Navigator.pop(context);
         },
-        child: Container(
-          child: Text("CALCULATE"),
-          color: kBottomContainerColor,
-          margin: EdgeInsets.only(top: 10.0),
-          width: double.infinity,
-          height: kBottomContainerHeight,
+        child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                child: new FlareActor(
+                  'assets/first.flr',
+                  fit: BoxFit.contain,
+                  alignment: Alignment.center,
+                  animation: "Untitled",
+                ),
+              ),
+            ),
+            Container(
+              child: Text("CALCULATE"),
+              color: kBottomContainerColor,
+              margin: EdgeInsets.only(top: 10.0),
+              width: double.infinity,
+              height: kBottomContainerHeight,
+            ),
+          ],
         ),
       ),
     );
